@@ -47,7 +47,7 @@ export default function Registration() {
       setEmailplace(true);
       erro++;
     }
-    if (userData.password.length < 1) {
+    if (userData.password.length < 6) {
       setPasswordplace(true);
       erro++;
     }
@@ -196,7 +196,7 @@ export default function Registration() {
                 />
                 {passwordplace ? (
                   <span style={{ color: "red", fontSize: "13px" }}>
-                    Password is required
+                    Password is required min 6 charactor
                   </span>
                 ) : (
                   ""
